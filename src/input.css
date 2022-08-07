@@ -1,0 +1,20 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.tab-item-1 {
+  background: linear-gradient(rgba(101, 74, 156, 0.8), rgba(101, 75, 155, 0.8)),
+    url(../assets/images/tab_bg_1.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.tab-item-2 {
+  background: linear-gradient(rgba(101, 74, 156, 0.8), rgba(101, 75, 155, 0.8)),
+    url(../assets/images/tab_bg_2.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
