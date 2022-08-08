@@ -14,12 +14,12 @@
 
   <nav class="border-b fixed top-0 left-0 right-0 bg-white z-50">
     <div class="container mx-auto py-3">
-      <div class="flex items-center">
+      <div class="flex items-center justify-between">
         <div class="mr-8">
           <img src="assets/images/logo.svg" alt="brand logo">
         </div>
 
-        <ul class="flex text-md text-primaryLite mr-auto">
+        <ul class="hidden sm:flex text-md text-primaryLite mr-auto">
           <li class="mr-8">
             <a href="#" class="text-primary">Overview</a>
           </li>
@@ -35,8 +35,26 @@
           <p class="lg:text-lg text-secondary">Order for $249</p>
           <button class="bg-primary text-white px-8 py-3 rounded font-medium">Pre Order</button>
         </div>
+
+        <button id="menu-btn" class="block hamburger sm:hidden focus:outline-none">
+          <span class="hamburger-top"></span>
+          <span class="hamburger-middle"></span>
+          <span class="hamburger-bottom"></span>
+        </button>
+
       </div>
     </div>
+
+    <div class="sm:hidden">
+      <div id="menu"
+        class="hidden absolute flex-col items-center self-end py-8 mt-6 space-y-3 font-medium text-primaryLite bg-gray-100 sm:w-auto sm:self-center left-3 right-3 drop-shadow-md">
+        <a href="#" class="text-primary">Overview</a>
+        <a href="#" class="hover:text-primary">Specs</a>
+        <a href="#" class="hover:text-primary">FAQs</a>
+      </div>
+    </div>
+
+
   </nav>
 
   <section class="container mx-auto">
@@ -419,8 +437,8 @@
     <div class="container mx-auto py-8">
       <div class="flex flex-col justify-between items-center md:flex-row">
         <div class="flex text-primary text-3xl">
-          <a class="mr-6" href="#"><i class="fa-brands fa-facebook"></i></a>
           <a class="mr-6" href="#"><i class="fa-brands fa-square-twitter"></i></a>
+          <a class="mr-6" href="#"><i class="fa-brands fa-facebook"></i></a>
           <a href="#"><i class="fa-brands fa-square-instagram"></i></a>
         </div>
         <p class="hidden text-sm lg:block">&copy; 2021 NOZE</p>

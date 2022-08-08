@@ -3,6 +3,15 @@ const tabs = document.querySelector('.tab-btns');
 const tabBtns = document.querySelectorAll('.tab-btn');
 const tabItems = document.querySelectorAll('.tab-item');
 
+const btn = document.getElementById('menu-btn');
+const nav = document.getElementById('menu');
+
+btn.addEventListener('click', (e) => {
+  btn.classList.toggle('open');
+  nav.classList.toggle('flex');
+  nav.classList.toggle('hidden');
+});
+
 tabs.addEventListener('click', (e) => {
   e.preventDefault();
   const clicked = e.target.closest('.tab-btn');
